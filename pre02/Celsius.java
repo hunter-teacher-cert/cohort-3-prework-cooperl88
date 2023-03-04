@@ -1,20 +1,14 @@
 import java.io.*; //boilerplate, imports java utils
 import java.util.*;
+import java.util.Scanner;
 
 public class Celsius{
   public static void main(String[] args){
-   double celsius; 
-   double celsiusToFarenheit = celsius * (9/5 + 32);
-
-
-
-    /**System.out.println("Hello world!");
-
-    Scanner in = new Scanner(System.in);
-    String celsius;
-    System.out.print("Type something: ");
-    celsius = in.nextLine();
-    System.out.printf("%f", celsius);
-    **/
+    double celsius;
+    Scanner in = new Scanner(System.in); //create new scanner variable
+    System.out.print("Celsius Value: "); //Prompt for value
+    celsius = in.nextDouble();
+    double celsiusToFarenheit = (celsius * 9/5) + 32;
+    System.out.printf("Your Celsius Temperature in Fahrenheit is: %.1f", celsiusToFarenheit); //uses format string to set decimal for float
   }
 }
