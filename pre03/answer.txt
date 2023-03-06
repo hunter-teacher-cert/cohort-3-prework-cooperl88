@@ -2,6 +2,7 @@
 Hint: Start by describing in words what ping and baffle do when they are invoked.
 
   -Invoking ping simple adds a period to the end of a statement which will not invoke a new line. Baffle adds the string "Wug" and does not create a new line. Neither of these create spaces. The main methods will print the string and then add a space because of the spacing in the quotation marks. The Zoop method is invoked in the second line of the block, zoop also creates a space because of spacing within quotation marks. Anywhere with the System class will create a new line in this case.
+______________________________________________________________________________________
 
 2) Draw a stack diagram that shows the state of the program the first time ping is invoked.
 
@@ -10,6 +11,8 @@ Hint: Start by describing in words what ping and baffle do when they are invoked
       main    ____________
                No, I wug.
               ____________
+
+______________________________________________________________________________________
   
 3) What happens if you invoke baffle(); at the end of the ping method? (We will see why in the next chapter.)
 
