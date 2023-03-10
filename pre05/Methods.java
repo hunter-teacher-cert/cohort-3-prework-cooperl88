@@ -20,26 +20,35 @@ If any of the three lengths is greater than the sum of the other two, you cannot
 
 Write a method named isTriangle that takes three integers as arguments and returns either true or false, depending on whether you can or cannot form a triangle from sticks with the given lengths. The point of this exercise is to use conditional statements to write a value method.**/
   public static boolean isTriangle(int stickOne, int stickTwo, int stickThree){
-
-    if((stickOne + stickTwo) < stickThree){
-      System.out.println("case 1");
+    if((stickOne + stickTwo) <= stickThree){
       return false;
-    } else if((stickOne + stickThree) < stickTwo){
+    } else if((stickOne + stickThree) <= stickTwo){
       System.out.println("case 2");
       return false;
-    } else if((stickTwo + stickThree)  < stickOne){
-      System.out.println("case 3");
+    } else if((stickTwo + stickThree)  <= stickOne){
       return false;
     } else{
-      System.out.println("case 4");
       return true;
     }
+  }
+
+  /**The goal of this exercise is to translate a recursive definition into a Java method. The Ackermann function is defined for non-negative integers as follows:
+
+  Write a method called ack that takes two ints as parameters and that computes and returns the value of the Ackermann function.
+
+Test your implementation of Ackermann by invoking it from main and displaying the return value. Note the return value gets very big very quickly. You should try it only for small values of m and n (not bigger than 3).**/
+
+  public static double ack(int n, int m){
+    if(m > 0 && n > 0){
+      A(m, n) = A(m - 1, A(m, n-1))
+    }
+    
   }
   
 
   public static void main(String[] args){
-    System.out.println(isDivisible(9, 4)); //must prinln to see returns
-    System.out.println(isTriangle(1, 3, 1));
+    System.out.println(isDivisible(8, 4)); //must prinln to see returns
+    System.out.println(isTriangle(1, 1, 1));
   }
 }
 
