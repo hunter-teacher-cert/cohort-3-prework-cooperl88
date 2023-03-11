@@ -38,7 +38,7 @@ Write a method named isTriangle that takes three integers as arguments and retur
 
 Test your implementation of Ackermann by invoking it from main and displaying the return value. Note the return value gets very big very quickly. You should try it only for small values of m and n (not bigger than 3).**/
 
-  public static double ack(int n, int m){
+  /**public static double ack(int n, int m){
     if(m > 0 && n > 0){
       A(m, n) = A(m - 1, A(m, n-1))
     }
@@ -50,5 +50,5 @@ Test your implementation of Ackermann by invoking it from main and displaying th
     System.out.println(isDivisible(8, 4)); //must prinln to see returns
     System.out.println(isTriangle(1, 1, 1));
   }
-}
+}**/
 
