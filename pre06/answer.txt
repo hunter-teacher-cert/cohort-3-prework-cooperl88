@@ -1,0 +1,12 @@
+Iteration	     i	    n
+0	            10	    10
+1	            10	
+2	            5	
+3	            6	
+4	            3	
+5	            4	
+6	            2	
+
+2) The output of this program is just going to be each value for i printed.
+
+3) We cannot prove that any int will terminate the loop, according to the reading we cannot prove or disprove this easily. When n is positive it is easier to tell when the loop terminates for instance.
